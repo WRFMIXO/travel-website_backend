@@ -2,5 +2,6 @@ from rest_framework import serializers
 from .models import VisaRequests
 
 class RequestSerializer(serializers.ModelSerializer):
-    model = VisaRequests
-    fields = '__all__'
+    class Meta:
+        model = VisaRequests
+        fields = '__all__'
