@@ -59,8 +59,8 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:3002',
-    'https://wrfmixo.github.io/travel-website/',
-    'http://wrfmixo.github.io/travel-website/',
+    'https://wrfmixo.github.io',
+    'http://wrfmixo.github.io',
 ]
 
 TEMPLATES = [
