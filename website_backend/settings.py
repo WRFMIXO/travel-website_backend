@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(l=bb-_jofgseztte^2fz&sx7c(%(_a6f@e%ttf7ntjax2gtra
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '16.171.142.69']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '16.171.142.69', '16.171.24.180']
 
 
 # Application definition
@@ -65,6 +65,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://16.171.142.69:8000',
     'http://wrfmixo.github.io',
     'http://185.199.110.153:443',
+    'http://16.171.24.180:8000',
 ]
 
 TEMPLATES = [
