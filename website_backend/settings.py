@@ -63,7 +63,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://wrfmixo.github.io',
     'https://16.171.142.69:8000',
     'http://16.171.142.69:8000',
-
+    'http://wrfmixo.github.io',
+    'http://185.199.110.153:443',
 ]
 
 TEMPLATES = [
