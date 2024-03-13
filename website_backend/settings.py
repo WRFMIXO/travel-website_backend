@@ -61,6 +61,7 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3002',
     'https://wrfmixo.github.io',
     'http://wrfmixo.github.io',
+    'http://185.199.110.153:443',
 ]
 
 TEMPLATES = [
