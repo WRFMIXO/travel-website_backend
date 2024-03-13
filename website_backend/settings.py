@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'utilisateurs',
+    'visa_requests',
 ]
 
 MIDDLEWARE = [
@@ -59,6 +60,10 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
     'http://localhost:3001',
     'http://localhost:3002',
+    'https://wrfmixo.github.io',
+    'https://16.171.142.69:8000',
+    'http://16.171.142.69:8000',
+
 ]
 
 TEMPLATES = [

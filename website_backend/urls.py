@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('users/', include('utilisateurs.urls')),
+    path('requests/', include('visa_requests.urls')),
 ]
