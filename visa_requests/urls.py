@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import CreateRequestView, ListRequestByUsers, ListRequestView, UpdateRequestView, DestroyRequestView
+from .views import CreateRequestView, ListRequestByUsers, ListRequestView, UpdateRequestView, DestroyRequestView, ListRequestOnVerifByUsers
 
 urlpatterns = [
     path('list/',ListRequestView.as_view(), name='requestList'),
@@ -7,4 +7,5 @@ urlpatterns = [
     path('list/<int:pk>/',ListRequestByUsers.as_view(), name='requestListbyUser'),
     path('update/<int:pk>/',UpdateRequestView.as_view(), name='requestupdate'),
     path('destroy/<int:pk>/',DestroyRequestView.as_view(), name='requestDestroy'),
+    path('list/evaluationrequests/<int:pk>/',ListRequestOnVerifByUsers.as_view(), name='listRequests'),
 ]

@@ -42,3 +42,14 @@ class ListRequestByUsers(generics.ListAPIView):
         queryset = VisaRequests.objects.filter(userConcerned=user_id)
         serializer = self.get_serializer(queryset, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+    
+class ListRequestOnVerifByUsers(generics.ListAPIView):
+    serializer_class = RequestSerializer
+    
+    def list(self, request, *args, **kwargs):
+        state = 'evaluation'
+        user_id = request.data.get('id')  # Utiliser request.data.get() pour récupérer les données
+        queryset = VisaRequests.objects.filter(userConcerned=user_id, etat=state)
+        serializer = self.get_serializer(queryset, many=True)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+    
